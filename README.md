@@ -44,7 +44,7 @@ const model = "gpt-3.5-turbo";
 
 const completion = await openaiAPI.chat.completions.create({
   model,
-  logprobs: true,
+  logprobs: true, // https://platform.openai.com/docs/api-reference/chat/create#chat-create-logprobs
   messages: [
     {
       role: "system",
